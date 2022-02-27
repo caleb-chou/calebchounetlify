@@ -1,39 +1,103 @@
-# Next + Netlify Starter
+# A basic portfolio for developers
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/46648482-644c-4c80-bafb-872057e51b6b/deploy-status)](https://app.netlify.com/sites/next-dev-starter/deploys)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-This is a [Next.js](https://nextjs.org/) v12 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and set up to be instantly deployed to [Netlify](https://url.netlify.com/SyTBPVamO)!
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
-This project is a very minimal starter that includes 2 sample components, a global stylesheet, a `netlify.toml` for deployment, and a `jsconfig.json` for setting up absolute imports and aliases. It also includes the [Essential Next.js Build Plugin](https://github.com/netlify/netlify-plugin-nextjs), which will allow for you to implement features like Preview Mode, server-side rendering/incremental static regeneration via Netlify Functions, and internationalized routing.
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fsmakosh%2Fnext-portfolio-dev&env=GITHUB_TOKEN,FORMIUM_ENDPOINT,NEXT_PUBLIC_PORTFOLIO_RECAPTCHA_KEY,NEXT_PUBLIC_PORTFOLIO_URL&envDescription=All%20env%20variables%20are%20required%20to%20deploy%20the%20project&envLink=https%3A%2F%2Fgithub.com%2Fsmakosh%2Fnext-portfolio-dev%2Fblob%2Fmaster%2F.env.development.template&project-name=my-portfolio&repo-name=my-portfolio&demo-title=Portfolio%20demo&demo-description=A%20simple%20portfolio%20for%20developers&demo-url=https%3A%2F%2Fportfolio-next.smakosh.com&demo-image=https%3A%2F%2Fportfolio-next.smakosh.com%2Fassets%2Fthumbnail%2Fthumbnail.png)
 
-(If you click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify)
+[![Powered by Vercel](./powered-by-vercel.svg)](https://vercel.com?utm_source=smakosh&utm_campaign=oss)
 
-## Getting Started
+## Gatsby version
 
-First, run the development server:
+[Gatsby-portfolio-portfolio](https://github.com/smakosh/gatsby-portfolio-dev)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- TypeScript
+- Eslint/Prettier configured
+- Scores 100% on a11y / Performance / PWA / SEO
+- PWA (desktop & mobile)
+- Easy to customize
+- Nice project structure
+- Amazing illustrations by [Undraw.co](https://undraw.co)
+- Tablet & mobile friendly
+- Continuous deployment with [Vercel](https://vercel.com/?utm_source=smakosh)
+- A contact form protected by Google Recaptcha powered by Formium
+- Can be deployed with one click
+- Fetches your Github pinned projects with most stars (You could customize this if you wish) using ISR
+- One click deployment to Vercel
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Design
 
-### Installation options
+Project on [Behance](https://www.behance.net/gallery/74172961/Free-Gatsby-portfolio-for-developers)
 
-**Option one:** One-click deploy
+## Prerequisites
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
+### Online
 
-**Option two:** Manual clone
+1. Create an account at [Formium](https://formium.com/?utm_source=smakosh) and grab your form endpoint url
+2. Grab a Google recaptcha key from [Google Recaptcha](https://www.google.com/recaptcha/admin)
+3. Grab your Github token from [GitHub](https://github.com/settings/tokens/new?scopes=repo&description=portfolio-dev)
+4. Click [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fsmakosh%2Fnext-portfolio-dev&env=GITHUB_TOKEN,FORMIUM_ENDPOINT,NEXT_PUBLIC_PORTFOLIO_RECAPTCHA_KEY,NEXT_PUBLIC_PORTFOLIO_URL&envDescription=All%20env%20variables%20are%20required%20to%20deploy%20the%20project&envLink=https%3A%2F%2Fgithub.com%2Fsmakosh%2Fnext-portfolio-dev%2Fblob%2Fmaster%2F.env.development.template&project-name=my-portfolio&repo-name=my-portfolio&demo-title=Portfolio%20demo&demo-description=A%20simple%20portfolio%20for%20developers&demo-url=https%3A%2F%2Fportfolio-next.smakosh.com&demo-image=https%3A%2F%2Fportfolio-next.smakosh.com%2Fassets%2Fthumbnail%2Fthumbnail.png) and pass in your:
 
-1. Clone this repo: `git clone https://github.com/netlify-templates/next-netlify-starter.git`
-2. Navigate to the directory and run `npm install`
-3. Run `npm run dev`
-4. Make your changes
-5. Connect to [Netlify](https://url.netlify.com/Bk4UicocL) manually (the `netlify.toml` file is the one you'll need to make sure stays intact to make sure the export is done and pointed to the right stuff)
+- Formium form endpoint
+- Google recaptcha public key
+- Github token
+
+To Env variables section.
+
+### Locally
+
+1. Create an account at [Formium](https://formium.io/?utm_source=smakosh)
+2. Install [Yarn](https://yarnpkg.com/en/)
+3. Grab a Google recaptcha key from [Google Recaptcha](https://www.google.com/recaptcha/admin)
+4. Grab your Github token from GitHub
+5. Run `cp .env.development.local.template .env.development.local`
+   > If you'd like to build the website locally, you will need to run `cp .env.development.local.template .env.development.local` as well and provide your env variables.
+6. Run `yarn && yarn dev`
+
+   > You could run `vercel env pull` to get your env variables from Vercel.
+
+7. Make sure to edit the `src/data/config.ts` file
+
+### Deploying locally to Vercel
+
+I highly recommend that you push to GitHub/GitLab and deploy your repository to Vercel instead or just hit the Deploy button.
+
+## Built with
+
+- Adobe XD
+- Next js
+- TypeScript
+- Formium
+- Google recaptcha
+- VSCode
+- And these useful of JavaScript libraries [package.json](package.json)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more details
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://upleveled.io/"><img src="https://avatars.githubusercontent.com/u/61600906?v=4?s=100" width="100px;" alt=""/><br /><sub><b>José Fernando Höwer Barbosa</b></sub></a><br /><a href="https://github.com/smakosh/next-portfolio-dev/commits?author=Josehower" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Elbarae1921"><img src="https://avatars.githubusercontent.com/u/44276243?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Elbarae Rguig</b></sub></a><br /><a href="https://github.com/smakosh/next-portfolio-dev/commits?author=Elbarae1921" title="Code">💻</a> <a href="https://github.com/smakosh/next-portfolio-dev/commits?author=Elbarae1921" title="Documentation">📖</a> <a href="https://github.com/smakosh/next-portfolio-dev/issues?q=author%3AElbarae1921" title="Bug reports">🐛</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## Support
+
+If you love this Next js template and want to support me, you can do so through my GitHub profile.

@@ -7,7 +7,7 @@ import { Wrapper, Details, Thumbnail } from './styles';
 const Contact = () => (
   <Wrapper as={Container} id="contact">
     <Details>
-      <h1>Let's Talk!</h1>
+      <h1>Let&apos;s Talk!</h1>
       <p>Contact me here, or use social media</p>
       <ContactForm />
     </Details>

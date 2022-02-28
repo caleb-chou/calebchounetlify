@@ -16,13 +16,13 @@ const Intro = () => {
       <IntroWrapper as={Container}>
         <Details theme={theme}>
           <h1>Hi There!</h1>
-          <h2>I’m John and I’m a JAMStack engineer!</h2>
+          <h2>I’m Caleb and I’m a Software Engineer & Student!</h2>
           <Link href="#contact" passHref>
             <Button as="a">Hire me</Button>
           </Link>
         </Details>
         <Thumbnail>
-          <Image src={devIllustration} alt="I’m John and I’m a JAMStack engineer!" />
+          <Image src={devIllustration} alt="I’m Caleb and I’m a Software Engineer & Student!" />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

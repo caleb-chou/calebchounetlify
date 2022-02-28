@@ -13,7 +13,7 @@ const Skills = () => {
     <Wrapper id="about">
       <SkillsWrapper as={Container}>
         <Thumbnail>
-          <Image src={skillsIllustration} alt="I’m John and I’m a Backend & Devops engineer!" />
+          <Image src={skillsIllustration} alt="I’m Caleb and I’m a Software Engineer & Student!" />
         </Thumbnail>
         <Details theme={theme}>
           <h1>More about me</h1>

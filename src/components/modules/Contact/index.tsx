@@ -7,13 +7,12 @@ import { Wrapper, Details, Thumbnail } from './styles';
 const Contact = () => (
   <Wrapper as={Container} id="contact">
     <Details>
+      <h1>Let's Talk!</h1>
+      <p>Contact me here, or use social media</p>
       <ContactForm />
     </Details>
     <Thumbnail>
-      <Image
-        src={contactIllustration}
-        alt="I’m John and I’m a Backend & Devops engineer!"
-      />
+      <Image src={contactIllustration} alt="I’m Caleb and I’m a Software Engineer & Student!" />
     </Thumbnail>
   </Wrapper>
 );

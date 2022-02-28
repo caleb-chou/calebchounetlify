@@ -26,7 +26,7 @@ export const getStaticProps = async () => {
       query: `
 				query viewer {
 					viewer {
-						repositories(first: 8, orderBy: {field: STARGAZERS, direction: DESC}) {
+						repositories(first: 3, orderBy: {field: STARGAZERS, direction: DESC}) {
 							edges {
 								node {
 									id

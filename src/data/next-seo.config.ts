@@ -1,24 +1,23 @@
 export default {
-  title: 'John Doe',
-  description: 'I’m John and I’m a Backend & Devops engineer!',
+  title: 'Caleb Chou',
+  description: 'I’m Caleb and I’m a Software Engineer & Student!',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://portfolio-next.smakosh.com/',
-    site_name: 'Portfolio Next',
+    url: 'https://calebchou.netlify.app/',
+    site_name: 'Portfolio',
     images: [
       {
-        url:
-          'https://portfolio-next.smakosh.com/assets/thumbnail/thumbnail.png',
+        url: 'https://portfolio-next.smakosh.com/assets/thumbnail/thumbnail.png',
         width: 1200,
         height: 600,
-        alt: 'I’m John and I’m a Backend & Devops engineer!',
+        alt: 'I’m Caleb and I’m a Software Engineer & Student!',
       },
     ],
   },
   twitter: {
-    handle: '@smakosh',
-    site: '@smakosh',
+    handle: '@calebdotpy',
+    site: 'in/caleb-chou',
     cardType: 'summary_large_image',
   },
 };
